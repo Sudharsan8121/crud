@@ -1,0 +1,37 @@
+/* components/ItemList.css */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapses borders to create a clean look */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column; 
+    /* Align buttons vertically */
+  }
+  button.delete{
+    background-color: red;
+  }
+  button.edit{
+    background-color:#007bff ;
+  }
+  
+  /* Ensure button size in the table does not conflict with global styles */
+  button.edit,
+  button.delete {
+    width: auto; 
+    /* Allow buttons to adjust width based on content */
+    height: auto; /* Allow buttons to adjust height based on content */
+    padding: 10px; /* Consistent padding */
+  }
+  
